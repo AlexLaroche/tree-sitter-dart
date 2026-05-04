@@ -1236,7 +1236,7 @@ module.exports = grammar({
             $.yield_each_statement,
             $.expression_statement,
             $.assert_statement,
-            // $.labeled_statement,
+            $.labeled_statement,
         ),
 
         local_function_declaration: $ => seq(
@@ -1253,9 +1253,9 @@ module.exports = grammar({
             $._semicolon
         ),
 
-        labeled_statement: $ => seq(
+        labeled_statement: $ => prec(1, seq(
             $.identifier, ':', $._statement
-        ),
+        )),
 
         assert_statement: $ => seq($.assertion, ';'),
 
