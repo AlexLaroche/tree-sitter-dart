@@ -3920,6 +3920,10 @@
           "named": true
         },
         {
+          "type": "assignment_expression",
+          "named": true
+        },
+        {
           "type": "bitwise_and_expression",
           "named": true
         },
@@ -3988,11 +3992,19 @@
           "named": true
         },
         {
+          "type": "pattern_assignment",
+          "named": true
+        },
+        {
           "type": "postfix_expression",
           "named": true
         },
         {
           "type": "relational_expression",
+          "named": true
+        },
+        {
+          "type": "rethrow_expression",
           "named": true
         },
         {
@@ -4013,6 +4025,10 @@
         },
         {
           "type": "this",
+          "named": true
+        },
+        {
+          "type": "throw_expression",
           "named": true
         },
         {
